@@ -1,0 +1,18 @@
+
+=== server start 2026-10-28T00:24:45.598835 on 127.0.0.1:8123 seed=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\_tmp\seed ===
+2026-10-28T00:24:58.934420 GET /nsis-3.0.4.1.7z -> basename=nsis-3.0.4.1.7z
+2026-10-28T00:24:58.937153   200 served 1287512 bytes
+2026-10-28T00:24:59.013635 GET /does-not-exist.7z -> basename=does-not-exist.7z
+2026-10-28T00:24:59.015079   404 NOT FOUND in seed
+2026-10-28T00:29:42.781983 GET /nsis-3.0.4.1.7z -> basename=nsis-3.0.4.1.7z
+2026-10-28T00:29:42.785227   200 served 1287512 bytes
+2026-10-28T00:33:46.632954 GET /7zip-win-x64.tar.gz -> basename=7zip-win-x64.tar.gz
+2026-10-28T00:33:46.635552   200 served 491982 bytes
+
+=== server start 2026-10-28T00:37:52.429467 on 127.0.0.1:8123 seed=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\_tmp\seed ===
+2026-10-28T00:38:03.468448 GET /electron-builder-binaries/nsis-3.0.4.1/nsis-3.0.4.1.7z -> basename=nsis-3.0.4.1.7z
+2026-10-28T00:38:03.471112   200 served 1287512 bytes
+2026-10-28T00:39:57.110172 GET /electron-builder-binaries/7zip@1.0.0/7zip-win-x64.tar.gz -> basename=7zip-win-x64.tar.gz
+2026-10-28T00:39:57.112592   200 served 491982 bytes
+2026-10-28T00:42:08.125170 GET /electron-builder-binaries/icons@1.2.3/icons-bundle.tar.gz -> basename=icons-bundle.tar.gz
+2026-10-28T00:42:08.129449   200 served 3138035 bytes

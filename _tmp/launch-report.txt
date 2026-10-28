@@ -1,0 +1,17 @@
+create rc=0 pid=592
+pids=592,6108,12596,24688
+screen: screen=1707x960
+windows=11
+pid=592 hwnd=396378 vis=True pos=(1331,700) size=339x192 exstyle=0x8200008 title=[??????]
+pid=6108 hwnd=855042 vis=False pos=(0,0) size=0x0 exstyle=0x80 title=[]
+pid=592 hwnd=920868 vis=False pos=(0,0) size=0x0 exstyle=0x0 title=[]
+pid=592 hwnd=394642 vis=False pos=(101,101) size=1280x665 exstyle=0x100 title=[]
+pid=592 hwnd=462098 vis=False pos=(0,0) size=0x0 exstyle=0x8000000 title=[]
+pid=592 hwnd=329922 vis=False pos=(0,0) size=0x0 exstyle=0x8080088 title=[]
+pid=6108 hwnd=527790 vis=False pos=(0,0) size=0x0 exstyle=0x0 title=[Default IME]
+pid=592 hwnd=460696 vis=False pos=(0,0) size=0x0 exstyle=0x80000 title=[HintWnd]
+pid=592 hwnd=460624 vis=False pos=(0,0) size=0x0 exstyle=0x0 title=[]
+pid=592 hwnd=919098 vis=False pos=(0,0) size=0x0 exstyle=0x0 title=[Sogou_TSF_UI]
+pid=592 hwnd=460174 vis=False pos=(0,0) size=0x0 exstyle=0x0 title=[Default IME]
+no gate log
+--- done ---

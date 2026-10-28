@@ -1,0 +1,6 @@
+# desktop-pet 素材管线依赖
+# 必装（pipeline.py / gate_check.py 需要）
+Pillow>=10.0.0
+
+# 可选：pipeline.py 的 --matting 照片 AI 抠图（rembg）第二步；不装则回退 color-key
+# rembg>=1.0.0

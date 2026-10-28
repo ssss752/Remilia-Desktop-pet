@@ -1,0 +1,22 @@
+  • electron-builder  version=26.18.0 os=10.0.26200
+  • author is missed in the package.json  appPackageFile=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\package.json
+  • executing @electron/rebuild  electronVersion=44.9.3 arch=x64 buildFromSource=false workspaceRoot=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=44.9.3 appOutDir=dist\win-unpacked
+  • downloaded      label=electron progress=100%
+  ⨯ [safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED] {"count":74,"threshold":50,"scope":"turn","targets":["E:\\WorkBuddy-Output\\2026-10-27-12-00-52\\remilia-pet\\dist\\win-unpacked.tmp"],"targetCount":1}  failedTask=build stackTrace=Error: [safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED] {"count":74,"threshold":50,"scope":"turn","targets":["E:\\WorkBuddy-Output\\2026-10-27-12-00-52\\remilia-pet\\dist\\win-unpacked.tmp"],"targetCount":1}
+    at checkBulkDeleteGuard (E:\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\node-safe-delete-shim.cjs:243:19)
+    at tryTrash (E:\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\node-safe-delete-shim.cjs:595:5)
+    at tryRm (E:\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\node-safe-delete-shim.cjs:806:5)
+    at Object.wrappedPromisesRm [as rm] (E:\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\node-safe-delete-shim.cjs:850:15)
+    at extractArchive (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\util\electronGet.ts:260:14)
+    at unpack (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\electron\ElectronFramework.ts:259:5)
+    at ElectronFramework.prepareApplicationStageDirectory (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\electron\ElectronFramework.ts:157:27)
+    at WinPackager.doPack (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\platformPackager.ts:261:5)
+    at WinPackager.pack (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\platformPackager.ts:167:5)
+    at Packager.doBuild (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\packager.ts:539:11)
+    at executeFinally (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\builder-util\src\promise.ts:12:14)
+    at Packager.build (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\app-builder-lib\src\packager.ts:459:31)
+    at executeFinally (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\builder-util\src\promise.ts:12:14)
+BUILD_EXIT=1

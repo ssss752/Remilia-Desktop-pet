@@ -1,0 +1,23 @@
+  • electron-builder  version=26.18.0 os=10.0.26200
+  • author is missed in the package.json  appPackageFile=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\package.json
+  • executing @electron/rebuild  electronVersion=44.9.3 arch=x64 buildFromSource=false workspaceRoot=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=44.9.3 appOutDir=dist\win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\dist\win-unpacked
+  • searching for node modules  pm=npm searchDir=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet
+  • no node modules found in collection, trying next search directory  pm=npm searchDir=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet
+  • searching for node modules  pm=traversal searchDir=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet
+  • using manual traversal of node_modules to build dependency tree
+  • no node modules found in collection, trying next search directory  pm=traversal searchDir=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet
+  • no node modules returned while searching directories  searchDirectories=[""]
+  • updating asar integrity executable resource  executablePath=dist\win-unpacked\蕾米莉亚桌宠.exe
+  • default Electron icon is used  reason=application icon is not set
+  • no code signing certificate configured, signing is skipped  path=dist\win-unpacked\蕾米莉亚桌宠.exe
+  • building        target=nsis file=dist\蕾米莉亚桌宠 Setup 1.0.0.exe archs=x64 oneClick=true perMachine=false
+  • no code signing certificate configured, signing is skipped  path=C:\Users\SUSAN0~1\AppData\Local\Temp\t-eAzVDC\elevate-staging-1\resources\elevate.exe
+  • no code signing certificate configured, signing is skipped  path=dist\蕾米莉亚桌宠 Setup 1.0.0.__uninstaller.exe
+  • no code signing certificate configured, signing is skipped  path=dist\蕾米莉亚桌宠 Setup 1.0.0.exe
+  • building block map  blockMapFile=dist\蕾米莉亚桌宠 Setup 1.0.0.exe.blockmap
+BUILD_EXIT=0

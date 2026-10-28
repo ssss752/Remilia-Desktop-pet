@@ -1,0 +1,34 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=flyTop say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v7
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v7\ai-config.json
+[top] after create setAOT(true) -> false
+[remind] started hourly=true water=50min quiet=23-8
+[bubble] topmost heal retry #1
+[bubble] topmost heal ok=true
+[gate] G1 PASS frames={"idle":4,"walk":8,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "欢迎回来～想我了没有？" side=right at 1505,786 top=true
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=true
+[perf] alwaysOnTop healed ok=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "呼……安全落地" side=right at 1506,791 top=true
+[bubble] warm-up done top=true
+[gate] force state flyTop
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=124x121 want=124x120
+[bubble] "点我一下，我会换姿势给你" side=left at 1232,567 top=true
+[perf] 4.0s raf=875 draw=104 state=flyTop frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[bubble] "双击让我睡觉，右键有菜单" side=left at 1305,267 top=true
+[perf] 4.0s raf=961 draw=110 state=flyTop frozen=false lowFlash=true
+[bubble] "想聊天就点托盘那个小粉点" side=left at 1378,7 top=true
+[perf] 4.0s raf=961 draw=110 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=110 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1272,790 top=true
+[perf] 4.0s raf=960 draw=111 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1272,791 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1272,791 top=true

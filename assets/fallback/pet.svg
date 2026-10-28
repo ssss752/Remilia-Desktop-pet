@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>桌面宠物矢量兜底形象</title>
+  <desc>素材缺失时显示的果冻小团子，纯矢量可任意缩放</desc>
+  <g>
+    <ellipse cx="128" cy="150" rx="78" ry="72" fill="#FFB86B"/>
+    <ellipse cx="128" cy="150" rx="78" ry="72" fill="none" stroke="#E8944A" stroke-width="3"/>
+    <ellipse cx="100" cy="132" rx="26" ry="20" fill="#FFD3A1" opacity="0.6"/>
+    <circle cx="102" cy="140" r="9" fill="#3A2A20"/>
+    <circle cx="154" cy="140" r="9" fill="#3A2A20"/>
+    <circle cx="105" cy="136" r="3" fill="#FFFFFF"/>
+    <circle cx="157" cy="136" r="3" fill="#FFFFFF"/>
+    <path d="M112 168 Q128 182 144 168" fill="none" stroke="#3A2A20" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="76" cy="146" rx="9" ry="12" fill="#F79E4E"/>
+    <ellipse cx="180" cy="146" rx="9" ry="12" fill="#F79E4E"/>
+    <ellipse cx="104" cy="218" rx="22" ry="9" fill="#E8944A"/>
+    <ellipse cx="152" cy="218" rx="22" ry="9" fill="#E8944A"/>
+    <path d="M60 96 Q76 66 108 58" fill="none" stroke="#E8944A" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

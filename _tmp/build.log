@@ -1,0 +1,22 @@
+  • electron-builder  version=26.18.0 os=10.0.26200
+  • author is missed in the package.json  appPackageFile=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\package.json
+  • executing @electron/rebuild  electronVersion=44.9.3 arch=x64 buildFromSource=false workspaceRoot=E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=44.9.3 appOutDir=dist\win-unpacked
+  • downloaded      label=electron progress=100%
+  ⨯ Timeout awaiting 'request' for 600000ms  failedTask=build stackTrace=RequestError: Timeout awaiting 'request' for 600000ms
+    at ClientRequest.<anonymous> (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\got\dist\source\core\index.js:970:65)
+    at Object.onceWrapper (node:events:634:26)
+    at ClientRequest.emit (node:events:531:35)
+    at ClientRequest.origin.emit (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+    at Timeout.timeoutHandler [as _onTimeout] (E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\node_modules\got\dist\source\core\utils\timed-out.js:36:25)
+    at listOnTimeout (node:internal/timers:587:11)
+    at processTimers (node:internal/timers:521:7)
+BUILD_EXIT=1

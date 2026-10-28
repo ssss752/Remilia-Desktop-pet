@@ -1,0 +1,265 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=- say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v9
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v9\ai-config.json
+[top] after create setAOT(true) -> false
+[remind] started hourly=true water=50min quiet=23-8
+[bubble] topmost heal retry #1
+[bubble] topmost heal retry #2
+[gate] G1 PASS frames={"idle":4,"walk":8,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "嘿嘿，终于注意到我了" side=right at 1505,786 top=false
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=false
+[perf] alwaysOnTop healed ok=false
+[bubble] topmost heal retry #3
+[bubble] topmost heal retry #4
+[land] drop -> crouch, hold 2200ms
+[bubble] "缩起来……先别管我" side=right at 1506,791 top=false
+[bubble] topmost heal ok=false
+[bubble] topmost heal retry #1
+[bubble] warm-up done top=false
+[perf] alwaysOnTop healed ok=false
+[bubble] topmost heal retry #2
+[bubble] topmost heal retry #3
+[bubble] topmost heal retry #4
+[bubble] topmost heal ok=false
+[perf] alwaysOnTop healed ok=false
+[bubble] topmost heal retry #1
+[bubble] topmost heal retry #2
+[perf] alwaysOnTop healed ok=false
+[bubble] topmost heal ok=true
+[bubble] topmost heal ok=true
+[gate] G3 retry#1 {"visible":true,"alwaysOnTop":false,"notFocused":true,"inScreen":true,"sizeOk":true}
+[bubble] topmost heal ok=true
+[perf] alwaysOnTop healed ok=true
+[bubble] topmost heal ok=true
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=125x121 want=124x120 (after 1 retry)
+[land] crouch hold done -> rise back to idle
+[bubble] "你是不是又在偷偷看别的女" side=right at 1506,799 top=true
+[bubble] "点我一下，我会换姿势给你" side=right at 1506,791 top=true
+[gate] chat shot -> E:/WorkBuddy-Output/2026-10-27-12-00-52/remilia-pet/_tmp/chat-new.png 624x806
+[perf] 4.0s raf=770 draw=69 state=idle frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[peek] start side=right from x=1379 -> 1653
+[bubble] "主人到底在忙什么呀……" side=right at 1506,791 top=true
+[bubble] "双击让我睡觉，右键有菜单" side=left at 1371,791 top=true
+[peek] hidden at x=1653 side=right visible=54px
+[perf] 4.0s raf=961 draw=95 state=peek frozen=false lowFlash=true
+[bubble] "想聊天就点托盘那个小粉点" side=left at 1452,791 top=true
+[perf] 4.0s raf=961 draw=110 state=peek frozen=false lowFlash=true
+[perf] 4.0s raf=952 draw=111 state=peek frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=peek frozen=false lowFlash=true
+[peek] back in at x=1586 -> idle
+[bubble] "唔……好想被摸摸头呀" side=left at 1394,791 top=true
+[bubble] "主人摸摸我的头，我就乖乖" side=left at 1394,791 top=true
+[perf] 4.0s raf=864 draw=99 state=idle frozen=true lowFlash=true
+[input] pointerdown btn=0 at 59,26
+[input] mousedown 1645,817 state=idle
+[bubble] "唔唔，被拎起来了" side=left at 1388,791 top=true
+[perf] alwaysOnTop healed ok=false
+[input] mouseup moved=true
+[perf] alwaysOnTop healed ok=false
+[land] fall -> crouch, hold 3400ms
+[bubble] "屁股和头都在疼" side=right at 1086,774 top=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] 4.0s raf=948 draw=106 state=fall frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1072,792 top=true
+[bubble] "……好吧，看你一眼" side=right at 1072,792 top=true
+[perf] 4.0s raf=954 draw=63 state=pout frozen=false lowFlash=true
+[input] pointerdown btn=0 at 51,25
+[input] mousedown 996,817 state=pout
+[input] mouseup moved=false
+[perf] alwaysOnTop healed ok=false
+[bubble] "爪子爪子，挠你痒痒" side=right at 1072,792 top=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[input] pointerdown btn=0 at 58,38
+[input] mousedown 1004,830 state=paw
+[bubble] "我、我又不是猫，别提着我" side=right at 1072,792 top=true
+[perf] alwaysOnTop healed ok=false
+[input] mouseup moved=true
+[perf] alwaysOnTop healed ok=false
+[perf] 4.0s raf=961 draw=82 state=drag frozen=false lowFlash=true
+[perf] alwaysOnTop healed ok=false
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1206,785 top=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1208,792 top=true
+[bubble] "今天的红茶还没喝完呢～" side=right at 1208,792 top=true
+[perf] 4.0s raf=960 draw=85 state=idle frozen=false lowFlash=true
+[bubble] "主人喜欢猫耳朵吗？" side=right at 1208,792 top=true
+[perf] 4.0s raf=961 draw=70 state=neko frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=neko frozen=false lowFlash=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] 4.0s raf=961 draw=78 state=neko frozen=false lowFlash=true
+[perf] alwaysOnTop healed ok=false
+[bubble] "去那边看看有什么好玩的" side=right at 1208,792 top=true
+[perf] 4.0s raf=960 draw=79 state=walk frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=walk frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=walk frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=110 state=walk frozen=false lowFlash=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 546,792 top=true
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 546,792 top=true
+[fly] toTop -> hoverY=10 (petH=120)
+[perf] 4.0s raf=960 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=112 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=112 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[peek] hint sent (cursor away 45s)
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1196,789 top=true
+[perf] 4.0s raf=961 draw=111 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1198,791 top=true
+[bubble] "我在这儿哦，一直在哦" side=right at 1198,791 top=true
+[perf] 4.2s raf=509 draw=57 state=idle frozen=true lowFlash=true
+[bubble] "飘到主人身边去～" side=right at 1198,791 top=true
+[perf] 4.0s raf=769 draw=89 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=float frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "抱头蹲防！这是防御姿势" side=left at 1309,789 top=true
+[perf] alwaysOnTop healed ok=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=left at 1309,790 top=true
+[bubble] "今天的红茶还没喝完呢～" side=left at 1309,790 top=true
+[perf] 4.2s raf=902 draw=103 state=idle frozen=true lowFlash=true
+[bubble] "打滚打滚～看我表演" side=left at 1309,790 top=true
+[perf] 4.0s raf=388 draw=31 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=roll frozen=false lowFlash=true
+[bubble] "抱抱～紧紧的那种" side=left at 1309,790 top=true
+[perf] 4.0s raf=958 draw=78 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=77 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=77 state=interact frozen=false lowFlash=true
+[bubble] "唔……好想被摸摸头呀" side=left at 1309,790 top=true
+[bubble] "你是不是又在偷偷看别的女" side=left at 1309,790 top=true
+[perf] 4.1s raf=73 draw=6 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[bubble] "主人～你在看我吗？" side=left at 1309,790 top=true
+[fly] toTop -> hoverY=10 (petH=120)
+[perf] 4.0s raf=201 draw=23 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=110 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=112 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=110 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=flyTop frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 988,788 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 986,790 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 986,790 top=true
+[perf] 4.0s raf=960 draw=82 state=idle frozen=false lowFlash=true
+[bubble] "我也很会撒娇的哦，喵" side=right at 986,790 top=true
+[perf] 4.0s raf=961 draw=72 state=neko frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=neko frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=neko frozen=false lowFlash=true
+[peek] start side=right from x=860 -> 1653
+[bubble] "你要是现在叫我，我就当没" side=right at 986,790 top=true
+[perf] 4.0s raf=960 draw=79 state=peek frozen=false lowFlash=true
+[peek] hidden at x=1653 side=right visible=54px
+[perf] 4.0s raf=961 draw=111 state=peek frozen=false lowFlash=true
+[input] pointerdown btn=0 at 53,74
+[input] mousedown 1702,864 state=peek
+[bubble] "才，才没有想看你在干什么" side=left at 1451,790 top=true
+[peek] caught at x=1649 side=right
+[bubble] "抓稳我哦，掉下去会哭的" side=left at 1451,790 top=true
+[perf] alwaysOnTop healed ok=false
+[input] mouseup moved=true
+[perf] alwaysOnTop healed ok=false
+[land] fall -> crouch, hold 3400ms
+[bubble] "呜呜，好丢脸" side=right at 1194,786 top=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] 4.0s raf=960 draw=111 state=fall frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1192,791 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1192,791 top=true
+[perf] 4.0s raf=961 draw=81 state=idle frozen=false lowFlash=true
+[bubble] "滚到主人脚边了哦" side=right at 1192,791 top=true
+[perf] 4.0s raf=959 draw=72 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=roll frozen=false lowFlash=true
+[bubble] "哼，不理你了" side=right at 1192,791 top=true
+[perf] 4.0s raf=961 draw=78 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=pout frozen=false lowFlash=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=false
+[perf] 4.0s raf=960 draw=78 state=pout frozen=false lowFlash=true
+[bubble] "再摸一下下嘛，就一下下" side=right at 1192,791 top=true
+[perf] 4.0s raf=961 draw=77 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=interact frozen=false lowFlash=true
+[peek] hint sent (cursor away 45s)
+[perf] 4.0s raf=961 draw=78 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=interact frozen=false lowFlash=true
+[bubble] "今天的红茶还没喝完呢～" side=right at 1192,791 top=true
+[bubble] "唔……好想被摸摸头呀" side=right at 1192,791 top=true
+[perf] 4.2s raf=423 draw=33 state=idle frozen=true lowFlash=true
+[perf] 4.2s raf=22 draw=2 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[bubble] "我在这儿哦，一直在哦" side=right at 1192,791 top=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[bubble] "散步散步～要去哪儿呀" side=right at 1192,791 top=true
+[perf] 4.0s raf=866 draw=100 state=walk frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=walk frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=112 state=walk frozen=false lowFlash=true
+[bubble] "嘿嘿，怕了吧" side=right at 546,791 top=true
+[perf] 4.0s raf=961 draw=105 state=paw frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=paw frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=paw frozen=false lowFlash=true
+[perf] alwaysOnTop healed ok=true
+[perf] 4.0s raf=961 draw=77 state=paw frozen=false lowFlash=true
+[bubble] "像不像蝙蝠～我是吸血鬼哦" side=right at 548,791 top=true
+[perf] 4.0s raf=959 draw=92 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=959 draw=112 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=float frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 986,787 top=true
+[perf] 4.0s raf=960 draw=111 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "你是不是又在偷偷看别的女" side=right at 988,790 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 988,790 top=true
+[bubble] "这样是不是很可爱呀" side=right at 988,790 top=true
+[perf] 4.2s raf=324 draw=36 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=roll frozen=false lowFlash=true
+[bubble] "高处的风景也不错呢" side=right at 988,790 top=true
+[perf] 4.0s raf=960 draw=88 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=112 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=float frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "呼……安全落地" side=right at 1426,789 top=true
+[perf] 4.0s raf=961 draw=112 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "唔……好想被摸摸头呀" side=right at 1428,791 top=true
+[bubble] "主人～你在看我吗？" side=right at 1428,791 top=true
+[perf] 4.2s raf=468 draw=53 state=idle frozen=true lowFlash=true
+[bubble] "再摸一下下嘛，就一下下" side=right at 1428,791 top=true
+[perf] 4.0s raf=817 draw=66 state=interact frozen=false lowFlash=true

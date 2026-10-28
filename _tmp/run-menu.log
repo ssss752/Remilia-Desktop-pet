@@ -1,0 +1,169 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=idle say=- shot=- bubbleShot=- menuShot=yes
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v7
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v7\ai-config.json
+[top] after create setAOT(true) -> false
+[remind] started hourly=true water=50min quiet=23-8
+[bubble] topmost heal ok=true
+[gate] G1 PASS frames={"idle":4,"walk":8,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "主人回来啦！我等好久啦" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1505,786 top=true
+[perf] alwaysOnTop healed ok=true
+[bubble] warm-up done top=true
+[gate] force state idle
+[bubble] "唔……好想被摸摸头呀" side=right at 1505,786 top=true
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=124x120 want=124x120
+[input] pet menu at 1267,584
+[input] menu shown visible=true focused=true
+[input] menu topmost ok=true tries=0
+[land] drop -> crouch, hold 2200ms
+[bubble] "主人下次轻点放我下来嘛" side=right at 1505,786 top=true
+[gate] menu shot failed: UnknownVizError
+[perf] 4.0s raf=923 draw=84 state=drop frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[land] crouch hold done -> rise back to idle
+[bubble] "我在这儿哦，一直在哦" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "咦，地板好硬呀" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "抱头蹲防！这是防御姿势" side=right at 1505,786 top=true
+[perf] 4.0s raf=957 draw=104 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "咦，地板好硬呀" side=right at 1505,786 top=true
+[perf] 4.0s raf=960 draw=106 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "我在这儿哦，一直在哦" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "呼……安全落地" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1505,786 top=true
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1505,786 top=true
+[perf] 4.0s raf=820 draw=95 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "唔……好想被摸摸头呀" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "唔……好想被摸摸头呀" side=right at 1505,786 top=true
+[perf] 4.0s raf=869 draw=102 state=idle frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "呼……安全落地" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1505,786 top=true
+[perf] 4.0s raf=865 draw=99 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "我在这儿哦，一直在哦" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1505,786 top=true
+[perf] 4.0s raf=865 draw=100 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人～你在看我吗？" side=right at 1505,786 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1505,786 top=true
+[perf] 4.0s raf=868 draw=101 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "我在这儿哦，一直在哦" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "唔，屁股有点疼" side=right at 1505,786 top=true
+[perf] 4.0s raf=867 draw=101 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "我在这儿哦，一直在哦" side=right at 1505,786 top=true
+[perf] 4.1s raf=838 draw=98 state=idle frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "唔……好想被摸摸头呀" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1505,786 top=true
+[perf] 4.0s raf=913 draw=104 state=drop frozen=false lowFlash=true
+[peek] hint sent (cursor away 45s)
+[land] crouch hold done -> rise back to idle
+[bubble] "主人～你在看我吗？" side=right at 1505,786 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "主人下次轻点放我下来嘛" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1505,786 top=true
+[perf] 4.0s raf=816 draw=94 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "呼……安全落地" side=right at 1505,786 top=true
+[perf] 4.0s raf=907 draw=105 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "唔……好想被摸摸头呀" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1505,786 top=true
+[perf] 4.0s raf=864 draw=100 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "你是不是又在偷偷看别的女" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "地板好凉……" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1505,786 top=true
+[bubble] "主人～你在看我吗？" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "唔，屁股有点疼" side=right at 1505,786 top=true
+[perf] 4.0s raf=816 draw=94 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缩起来……先别管我" side=right at 1505,786 top=true
+[perf] 4.0s raf=913 draw=106 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1505,786 top=true
+[perf] 4.0s raf=815 draw=94 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "地板好凉……" side=right at 1505,786 top=true
+[perf] 4.0s raf=914 draw=107 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "陪我玩一会儿嘛，就一小会" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缩起来……先别管我" side=right at 1505,786 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "你是不是又在偷偷看别的女" side=right at 1505,786 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1505,786 top=true
+[perf] 4.0s raf=819 draw=95 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人～你在看我吗？" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "缓一下，马上就好" side=right at 1505,786 top=true

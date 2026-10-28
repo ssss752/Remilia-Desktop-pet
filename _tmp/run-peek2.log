@@ -1,0 +1,31 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=peek say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v17
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v17\ai-config.json
+[top] after create setAOT(true) -> true
+[remind] started hourly=true water=50min quiet=23-8
+[gate] G1 PASS frames={"idle":4,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"fly":"alias:float","drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "欢迎回来～想我了没有？" side=right at 1505,786 top=true
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=true
+[bubble] warm-up done top=true
+[gate] force state peek
+[peek] start side=right from x=1379 -> 1623
+[bubble] "主人到底在忙什么呀……" side=right at 1506,782 top=true
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=125x121 want=124x120
+[peek] hidden at x=1623 side=right visible=84px
+[bubble] "点我一下，我会换姿势给你" side=left at 1423,781 top=true
+[perf] 4.0s raf=877 draw=97 state=peek frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[bubble] "双击让我睡觉，右键有菜单" side=left at 1427,781 top=true
+[perf] 4.0s raf=961 draw=111 state=peek frozen=false lowFlash=true
+[bubble] "想聊天就点托盘那个小粉点" side=left at 1423,781 top=true
+[perf] 4.0s raf=960 draw=111 state=peek frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=112 state=peek frozen=false lowFlash=true
+[peek] back in at x=1586 -> idle
+[bubble] "主人～你在看我吗？" side=left at 1392,781 top=true
+[bubble] "今天的红茶还没喝完呢～" side=left at 1392,781 top=true
+[perf] 4.0s raf=919 draw=104 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=22 draw=2 state=idle frozen=true lowFlash=true

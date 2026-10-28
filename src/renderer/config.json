@@ -1,0 +1,178 @@
+{
+  "version": 3,
+  "language": "zh",
+  "name": "蕾米莉亚",
+  "canvas": {
+    "width": 512,
+    "height": 512,
+    "scale": 0.5
+  },
+  "anchor": "feet-center",
+  "animations": {
+    "idle": {
+      "fps": 5,
+      "loop": true,
+      "priority": 0,
+      "pingpong": true
+    },
+    "fly": {
+      "frames": "float",
+      "fps": 10,
+      "loop": true,
+      "priority": 1,
+      "moveSpeed": 130,
+      "pingpong": true
+    },
+    "drag": {
+      "fps": 7,
+      "loop": true,
+      "priority": 2,
+      "pingpong": true
+    },
+    "drop": {
+      "frames": "crouch",
+      "fps": 11,
+      "loop": false,
+      "priority": 3,
+      "next": "idle"
+    },
+    "crouch": {
+      "fps": 11,
+      "loop": false,
+      "priority": 3,
+      "next": "idle"
+    },
+    "sleep": {
+      "fps": 2,
+      "loop": true,
+      "priority": -1,
+      "pingpong": true
+    },
+    "greet": {
+      "fps": 5,
+      "loop": false,
+      "priority": 4,
+      "next": "idle"
+    },
+    "interact": {
+      "fps": 6,
+      "loop": false,
+      "priority": 4,
+      "next": "idle"
+    },
+    "float": {
+      "fps": 10,
+      "loop": true,
+      "priority": 1,
+      "pingpong": true
+    },
+    "flyTop": {
+      "frames": "float",
+      "fps": 10,
+      "loop": true,
+      "priority": 1,
+      "pingpong": true
+    },
+    "grip": {
+      "fps": 6,
+      "loop": true,
+      "priority": 2,
+      "pingpong": true
+    },
+    "peek": {
+      "frames": "grip",
+      "fps": 5,
+      "loop": true,
+      "priority": 2,
+      "pingpong": true
+    },
+    "neko": {
+      "fps": 6,
+      "loop": false,
+      "priority": 4,
+      "next": "idle"
+    },
+    "paw": {
+      "fps": 8,
+      "loop": false,
+      "priority": 4,
+      "next": "idle"
+    },
+    "fall": {
+      "frames": "crouch",
+      "fps": 8,
+      "loop": false,
+      "priority": 3,
+      "next": "idle"
+    },
+    "pout": {
+      "fps": 4,
+      "loop": false,
+      "priority": 4,
+      "next": "idle"
+    },
+    "roll": {
+      "fps": 8,
+      "loop": false,
+      "priority": 4,
+      "next": "idle"
+    }
+  },
+  "bubble": {
+    "enabled": true,
+    "showMs": 3200
+  },
+  "behaviors": {
+    "actionHoldMs": 15000,
+    "idleBubbleSec": 14,
+    "sleepAutoWakeSec": 60,
+    "screenEdge": "bounce",
+    "groundOffsetPx": 0,
+    "physics": {
+      "gravity": 1500,
+      "airDragPerSec": 0.35,
+      "flingBoost": 1.2,
+      "flingMinSpeed": 260,
+      "hardLandingSpeed": 620,
+      "maxTiltDeg": 18
+    },
+    "float": {
+      "hoverHeight": 150,
+      "bobAmp": 6,
+      "bobPeriodMs": 1100,
+      "driftSpeed": 26,
+      "durationMs": [
+        15000,
+        15000
+      ],
+      "topMarginRatio": 0.08
+    },
+    "peek": {
+      "hideRatio": 0.3,
+      "toEdgeSpeed": 260,
+      "slideInMs": 520,
+      "stayMs": [
+        9000,
+        18000
+      ],
+      "preferNearest": 0.9
+    },
+    "transition": {
+      "type": "crossfade",
+      "ms": 180
+    },
+    "landing": {
+      "crouchHoldMs": 2200,
+      "hardHoldMs": 3400,
+      "riseMs": 320
+    },
+    "persist": {
+      "position": true,
+      "size": true,
+      "settings": true
+    },
+    "fly": {
+      "hoverHeight": 12
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    html, body {
+      margin: 0; padding: 0; width: 100%; height: 100%;
+      background: transparent; overflow: hidden; user-select: none;
+      -webkit-app-region: no-drag;
+      font: 12px/1.2 "Microsoft YaHei", -apple-system, "PingFang SC", sans-serif;
+      /* 面板按内容自适应高度并贴底：窗口给足余量，多出来的高度是透明的、
+         不会显示成面板底部的一截空白，也永远不会把最后一项「退出」裁掉。 */
+      display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    #panel {
+      box-sizing: border-box; width: 100%;
+      background: rgba(255,250,252,0.97);
+      border: 1px solid #f0b3d0; border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(80,40,70,0.35), 0 0 0 1px rgba(255,255,255,0.7) inset;
+      padding: 5px;
+      display: flex; flex-direction: column; gap: 1px;
+      opacity: 0; transform: scale(0.96); transform-origin: 80% 100%;
+      transition: opacity 90ms linear, transform 90ms ease-out;
+    }
+    #panel.show { opacity: 1; transform: scale(1); }
+    .item {
+      padding: 5px 8px; border-radius: 6px; color: #3a2432;
+      white-space: nowrap; display: flex; align-items: center; gap: 6px;
+    }
+    .item:hover { background: #fbe4ef; color: #8e2350; }
+    .item .k { font-size: 11px; opacity: 0.65; }
+    .sep { height: 1px; background: #f2d3e0; margin: 3px 4px; }
+    .item.danger:hover { background: #ffe3e6; color: #b3192b; }
+  </style>
+</head>
+<body>
+  <div id="panel">
+    <div class="item" data-act="chat">和我说说话</div>
+    <div class="item" data-act="float">扇着翅膀飞一下</div>
+    <div class="item" data-act="neko">比个猫耳朵</div>
+    <div class="item" data-act="sleep">睡觉 / 叫醒</div>
+    <div class="sep"></div>
+    <div class="item" data-act="hide">先藏起来</div>
+    <div class="item danger" data-act="quit">退出</div>
+  </div>
+  <script>
+    const panel = document.getElementById("panel");
+    requestAnimationFrame(() => panel.classList.add("show"));
+    document.querySelectorAll(".item").forEach((el) => {
+      el.addEventListener("click", () => window.menuAPI.pick(el.dataset.act));
+      el.addEventListener("contextmenu", (e) => e.preventDefault());
+    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") window.menuAPI.close(); });
+  </script>
+</body>
+</html>

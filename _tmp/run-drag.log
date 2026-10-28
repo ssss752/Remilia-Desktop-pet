@@ -1,0 +1,39 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=crouch say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v13
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v13\ai-config.json
+[top] after create setAOT(true) -> true
+[remind] started hourly=true water=50min quiet=23-8
+[gate] G1 PASS frames={"idle":4,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"fly":"alias:float","drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "嘿嘿，终于注意到我了" side=right at 1505,786 top=true
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=true
+[bubble] warm-up done top=true
+[gate] force state crouch
+[land] crouch -> crouch, hold 2200ms
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=125x120 want=124x120
+[bubble] "点我一下，我会换姿势给你" side=right at 1506,792 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "我在这儿哦，一直在哦" side=right at 1506,792 top=true
+[perf] 4.0s raf=878 draw=87 state=idle frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[input] pointerdown btn=0 at 62,62
+[input] mousedown 1441,841 state=idle
+[bubble] "呀——！放我下来啦" side=right at 1506,779 top=true
+[input] drag start from=idle now=drag
+[bubble] "双击让我睡觉，右键有菜单" side=right at 1506,732 top=true
+[input] mouseup moved=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "唔，屁股有点疼" side=right at 1506,785 top=true
+[perf] 4.0s raf=955 draw=88 state=drop frozen=false lowFlash=true
+[bubble] "想聊天就点托盘那个小粉点" side=right at 1506,792 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1506,792 top=true
+[bubble] "再不理我我就真的生气了" side=right at 1506,779 top=true
+[perf] 4.0s raf=959 draw=62 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=pout frozen=false lowFlash=true
+[bubble] "滚到主人脚边了哦" side=right at 1506,779 top=true
+[perf] 4.0s raf=960 draw=77 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=roll frozen=false lowFlash=true

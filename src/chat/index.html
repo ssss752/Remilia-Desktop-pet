@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>和蕾米莉亚聊天</title>
+  <style>
+    /* ==================================================================
+       绯红哥特洋馆 —— Scarlet Devil Mansion
+       配色：夜黑 #0e0509 / 深酒红 #2a0c16 / 绯红 #c8102e / 烫金 #c9a227
+       装饰语言：哥特尖拱、蕾丝扇贝边、蔷薇纹章、信笺气泡
+       ================================================================== */
+    :root {
+      --ink: #0e0509;
+      --wine: #2a0c16;
+      --wine-2: #3a1220;
+      --blood: #c8102e;
+      --blood-lt: #e02a44;
+      --gold: #c9a227;
+      --gold-lt: #e8c96a;
+      --lace: rgba(201, 162, 39, 0.42);
+      --text: #f4e6ec;
+      --text-dim: rgba(244, 230, 236, 0.62);
+      --serif: "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      font: 14px/1.62 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      display: flex; flex-direction: column;
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(120% 80% at 50% -18%, #5a1024 0%, transparent 58%),
+        linear-gradient(178deg, #1c0710 0%, #12060c 46%, #0b0407 100%);
+    }
+    /* 洋馆壁纸暗纹：两层斜纹 + 顶部血月光晕 */
+    body::before {
+      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(200, 16, 46, 0.045) 0 1px, transparent 1px 10px),
+        repeating-linear-gradient(-45deg, rgba(200, 16, 46, 0.045) 0 1px, transparent 1px 10px),
+        radial-gradient(70% 46% at 50% 0%, rgba(232, 201, 106, 0.10), transparent 70%);
+    }
+    body > * { position: relative; z-index: 1; }
+
+    /* ---------- 顶栏：尖拱 + 纹章 + 立绘头像 ---------- */
+    header {
+      position: relative;
+      padding: 14px 14px 12px;
+      display: flex; align-items: center; gap: 11px;
+      background: linear-gradient(180deg, rgba(58, 18, 32, 0.92), rgba(26, 8, 15, 0.72));
+      border-bottom: 1px solid rgba(201, 162, 39, 0.28);
+    }
+    /* 哥特尖拱：用 pattern 铺一排连续尖拱窗 */
+    .arches {
+      position: absolute; left: 0; right: 0; top: 0; height: 24px;
+      pointer-events: none; opacity: 0.72;
+    }
+    /* 角落蔷薇水印：压在壁纸上，不参与布局，也不遮任何内容 */
+    .crest-rose { position: fixed; width: 78px; height: 78px; opacity: 0.13; z-index: 0; pointer-events: none; }
+    .crest-rose.l { left: -26px; bottom: 70px; }
+    .crest-rose.r { right: -30px; top: 86px; }
+
+    .avatar-wrap {
+      width: 46px; height: 46px; flex: none; position: relative;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, #46101f, #20070f);
+      box-shadow:
+        0 0 0 1.5px rgba(201, 162, 39, 0.75),
+        0 0 0 4px rgba(200, 16, 46, 0.22),
+        0 3px 12px rgba(0, 0, 0, 0.62),
+        inset 0 0 12px rgba(200, 16, 46, 0.35);
+      overflow: hidden;
+    }
+    .avatar-wrap img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      filter: saturate(1.05) contrast(1.03);
+    }
+    /* 头像上的血色微光，让她像从烛光里探出来 */
+    .avatar-wrap::after {
+      content: ""; position: absolute; inset: 0; border-radius: 50%;
+      background: radial-gradient(circle at 50% 118%, rgba(200, 16, 46, 0.45), transparent 58%);
+      pointer-events: none;
+    }
+
+    .id { min-width: 0; }
+    .who {
+      font-family: var(--serif);
+      font-size: 15px; font-weight: 700; letter-spacing: 0.06em;
+      color: #fbeef2;
+      text-shadow: 0 0 14px rgba(200, 16, 46, 0.55), 0 1px 0 rgba(0, 0, 0, 0.6);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .sub {
+      font-size: 11.5px; color: var(--text-dim); letter-spacing: 0.08em;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    #badge {
+      margin-left: auto; flex: none;
+      font-size: 11px; padding: 4px 9px; border-radius: 999px;
+      background: rgba(201, 162, 39, 0.10);
+      border: 1px solid rgba(201, 162, 39, 0.40);
+      color: var(--gold-lt); cursor: pointer;
+      transition: background 0.18s, border-color 0.18s;
+    }
+    #badge:hover { background: rgba(201, 162, 39, 0.22); border-color: var(--gold); }
+
+    /* 蕾丝扇贝分隔线 */
+    .lace { display: block; width: 100%; height: 9px; flex: none; opacity: 0.62; }
+
+    /* ---------- 消息区 ---------- */
+    #msgs {
+      flex: 1; overflow-y: auto; padding: 14px 14px 6px;
+      display: flex; flex-direction: column; gap: 12px;
+      scrollbar-width: thin; scrollbar-color: rgba(201, 162, 39, 0.35) transparent;
+    }
+    #msgs::-webkit-scrollbar { width: 8px; }
+    #msgs::-webkit-scrollbar-thumb {
+      background: rgba(201, 162, 39, 0.32); border-radius: 4px;
+    }
+    #msgs::-webkit-scrollbar-track { background: transparent; }
+
+    .row { display: flex; }
+    .row.me { justify-content: flex-end; }
+    .bubble {
+      position: relative;
+      max-width: 78%; padding: 9px 12px;
+      white-space: pre-wrap; word-break: break-word;
+      font-size: 13.5px; line-height: 1.58;
+    }
+    /* 她的：信笺形（左上角收角，左下伸出一个小尖，像被递到面前） */
+    .row.pet .bubble {
+      background: linear-gradient(158deg, #3b1421 0%, #2b0d17 100%);
+      border: 1px solid var(--lace);
+      border-radius: 3px 12px 12px 12px;
+      color: #f6e9ee;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.045);
+    }
+    .row.pet .bubble::before {
+      content: ""; position: absolute; left: 7px; bottom: -5px;
+      width: 10px; height: 10px;
+      background: #2b0d17;
+      border-right: 1px solid var(--lace);
+      border-bottom: 1px solid var(--lace);
+      transform: rotate(45deg);
+    }
+    /* 我的：绯红圆角，右下一个小尖 */
+    .row.me .bubble {
+      background: linear-gradient(158deg, #c3152f 0%, #8d0f23 100%);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 12px 12px 3px 12px;
+      color: #fff;
+      box-shadow: 0 3px 14px rgba(140, 10, 30, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    }
+    .row.me .bubble::after {
+      content: ""; position: absolute; right: 7px; bottom: -5px;
+      width: 10px; height: 10px;
+      background: #8d0f23;
+      border-right: 1px solid rgba(255, 255, 255, 0.16);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+      transform: rotate(45deg);
+    }
+
+    /* ---------- 打字指示 ---------- */
+    .typing {
+      display: none; padding: 0 16px 8px;
+      font-size: 12px; color: var(--gold-lt); letter-spacing: 0.10em;
+      font-family: var(--serif); opacity: 0.9;
+    }
+    .typing b { font-weight: 400; animation: breathe 1.5s ease-in-out infinite; }
+    @keyframes breathe { 0%, 100% { opacity: 0.42; } 50% { opacity: 1; } }
+
+    /* ---------- 输入区 ---------- */
+    footer {
+      padding: 10px 12px 12px; display: flex; gap: 9px; align-items: flex-end;
+      border-top: 1px solid rgba(201, 162, 39, 0.16);
+      background: linear-gradient(180deg, rgba(16, 6, 10, 0.6), rgba(9, 3, 6, 0.86));
+    }
+    textarea {
+      flex: 1; resize: none; height: 62px;
+      border-radius: 9px;
+      border: 1px solid rgba(201, 162, 39, 0.30);
+      background: rgba(255, 255, 255, 0.045);
+      color: var(--text); padding: 8px 10px; font: inherit; outline: none;
+      overflow-y: auto; scrollbar-width: none;   /* placeholder 换行会顶出滚动条，藏掉 */
+      transition: border-color 0.18s, box-shadow 0.18s;
+    }
+    textarea::-webkit-scrollbar { width: 0; height: 0; }
+    textarea::placeholder { color: rgba(244, 230, 236, 0.36); }
+    textarea:focus {
+      border-color: rgba(200, 16, 46, 0.85);
+      box-shadow: 0 0 0 2px rgba(200, 16, 46, 0.16), inset 0 0 12px rgba(200, 16, 46, 0.10);
+    }
+    /* 发送键 = 封蜡印 */
+    button.send {
+      flex: none; width: 54px; height: 54px; border-radius: 50%;
+      border: 1px solid rgba(201, 162, 39, 0.62);
+      background: radial-gradient(circle at 34% 28%, #e8455f 0%, #b0132b 52%, #6d0a1b 100%);
+      color: #fff5f7; font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+      cursor: pointer; font-family: var(--serif);
+      box-shadow: 0 3px 14px rgba(150, 12, 32, 0.55), inset 0 1px 3px rgba(255, 255, 255, 0.30);
+      transition: transform 0.12s, box-shadow 0.18s, filter 0.18s;
+    }
+    button.send:hover { filter: brightness(1.12); box-shadow: 0 4px 18px rgba(200, 16, 46, 0.7), inset 0 1px 3px rgba(255, 255, 255, 0.34); }
+    button.send:active { transform: scale(0.94); }
+    button.send:disabled { opacity: 0.45; cursor: default; filter: grayscale(0.4); }
+
+    .hint {
+      padding: 0 14px 10px; font-size: 11.5px; color: var(--text-dim); line-height: 1.5;
+    }
+    .hint a { color: var(--gold-lt); cursor: pointer; text-decoration: none; border-bottom: 1px dotted rgba(232, 201, 106, 0.6); }
+    .hint a:hover { color: #fff2c8; }
+
+    /* ================== AI 设置面板 ================== */
+    #panel {
+      position: absolute; inset: 0; z-index: 20;
+      background:
+        radial-gradient(120% 70% at 50% -12%, #561024 0%, transparent 60%),
+        linear-gradient(178deg, #1b0710 0%, #0d0408 100%);
+      display: none; flex-direction: column;
+      padding: 16px 18px 14px; overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    #panel.open { display: flex; }
+    #panel h3 {
+      margin: 0 0 6px; font-family: var(--serif); font-size: 16px;
+      letter-spacing: 0.10em; color: #fbeef2;
+      text-shadow: 0 0 16px rgba(200, 16, 46, 0.6);
+      display: flex; align-items: center; gap: 8px;
+    }
+    #panel h3::before, #panel h3::after {
+      content: ""; flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.6), transparent);
+    }
+    #panel .desc { font-size: 12px; color: var(--text-dim); margin-bottom: 14px; line-height: 1.62; }
+
+    .field { margin-bottom: 11px; }
+    .field label {
+      display: block; font-size: 11.5px; color: var(--gold-lt);
+      letter-spacing: 0.04em; margin-bottom: 5px;
+    }
+    .field input, .field select {
+      width: 100%; padding: 7px 9px; border-radius: 7px; font: inherit;
+      border: 1px solid rgba(201, 162, 39, 0.26);
+      background: rgba(255, 255, 255, 0.045);
+      color: var(--text); outline: none;
+      transition: border-color 0.16s, box-shadow 0.16s;
+    }
+    .field input:focus, .field select:focus {
+      border-color: rgba(200, 16, 46, 0.85);
+      box-shadow: 0 0 0 2px rgba(200, 16, 46, 0.15);
+    }
+    .field select {
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0,0 L5,6 L10,0' fill='none' stroke='%23c9a227' stroke-width='1.4'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+    }
+    .field select option { background: #1b0710; color: var(--text); }
+    .field .tip { font-size: 11px; color: rgba(244, 230, 236, 0.44); margin-top: 4px; }
+    .row2 { display: flex; gap: 9px; }
+    .row2 .field { flex: 1; }
+
+    #testResult {
+      font-size: 12px; min-height: 36px; padding: 8px 10px; border-radius: 7px;
+      background: rgba(255, 255, 255, 0.04); margin: 4px 0 12px; white-space: pre-wrap;
+      border-left: 2px solid rgba(201, 162, 39, 0.4);
+      color: var(--text-dim); line-height: 1.55;
+    }
+    #testResult.ok { border-left-color: #63d29a; color: #c9f7dd; background: rgba(99, 210, 154, 0.08); }
+    #testResult.bad { border-left-color: var(--blood); color: #ffd7dd; background: rgba(200, 16, 46, 0.10); }
+
+    .actions { display: flex; gap: 9px; margin-top: auto; padding-top: 12px; }
+    .actions button {
+      flex: 1; padding: 10px 0; border-radius: 8px; font: inherit;
+      font-size: 13px; font-weight: 600; letter-spacing: 0.06em; cursor: pointer;
+      border: 1px solid transparent; transition: filter 0.16s, border-color 0.16s;
+    }
+    #saveBtn {
+      background: linear-gradient(180deg, #cc1732, #8d0f23);
+      border-color: rgba(201, 162, 39, 0.5); color: #fff5f7;
+      box-shadow: 0 3px 12px rgba(150, 12, 32, 0.45);
+    }
+    #saveBtn:hover { filter: brightness(1.12); }
+    #testBtn {
+      background: rgba(201, 162, 39, 0.10);
+      border-color: rgba(201, 162, 39, 0.36); color: var(--gold-lt);
+    }
+    #testBtn:hover { background: rgba(201, 162, 39, 0.2); }
+    #closeBtn {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.14); color: var(--text-dim); flex: 0 0 74px;
+    }
+    #closeBtn:hover { color: var(--text); }
+    .actions button:disabled { opacity: 0.45; cursor: default; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- 哥特尖拱：一排连续的拱窗 -->
+    <svg class="arches" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <pattern id="gothicArch" width="46" height="24" patternUnits="userSpaceOnUse">
+          <path d="M1,24 L1,17 Q23,-9 45,17 L45,24"
+                fill="none" stroke="rgba(201,162,39,0.50)" stroke-width="1" />
+          <path d="M8,24 L8,18 Q23,-1 38,18 L38,24"
+                fill="rgba(200,16,46,0.10)" stroke="none" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="24" fill="url(#gothicArch)" />
+    </svg>
+    <div class="avatar-wrap">
+      <img id="avatarImg" src="../../assets/ui/avatar.png" alt="" />
+    </div>
+    <div class="id">
+      <div class="who">蕾米莉亚·斯卡蕾特</div>
+      <div class="sub" id="sub">红魔馆的主人 · 夜之王</div>
+    </div>
+    <button id="badge" title="点击查看 / 修改 AI 设置">本地引擎</button>
+  </header>
+
+  <!-- 蕾丝扇贝分隔 -->
+  <svg class="lace" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="scallop" width="18" height="9" patternUnits="userSpaceOnUse">
+        <path d="M0,0.5 Q9,8.6 18,0.5" fill="none" stroke="rgba(201,162,39,0.62)" stroke-width="1" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="9" fill="url(#scallop)" />
+  </svg>
+
+  <div id="msgs"></div>
+  <div class="typing" id="typing">✧ <b>蕾米莉亚正在斟酌字句</b> ✧</div>
+
+  <footer>
+    <textarea id="input" placeholder="向大小姐说些什么吧…"></textarea>
+    <button class="send" id="send">送出</button>
+  </footer>
+  <div class="hint" id="hint"></div>
+
+  <div id="panel">
+    <h3>洋馆的通讯设备</h3>
+    <div class="desc">这里决定她用什么脑子接你的话。不填也能聊——不填就是本地人格引擎，离线也接得住。选 agnes 并填入 API Key，才是真的在跟她对话。</div>
+
+    <div class="field">
+      <label>思考来源</label>
+      <select id="fProvider">
+        <option value="local">本地人格引擎（离线，不需要 Key）</option>
+        <option value="agnes">agnes（agnes-2.5-flash）</option>
+        <option value="openai-compatible">其它 OpenAI 兼容服务</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>接口地址</label>
+      <input id="fEndpoint" placeholder="https://api.agnes-ai.cn/v1/chat/completions" />
+    </div>
+
+    <div class="field">
+      <label>API Key</label>
+      <input id="fKey" type="password" placeholder="sk-..." autocomplete="off" spellcheck="false" />
+      <div class="tip" id="keyTip">已保存过 Key；留空则沿用原来的。</div>
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label>模型</label>
+        <input id="fModel" placeholder="agnes-2.5-flash" />
+      </div>
+      <div class="field" style="flex:0 0 88px">
+        <label>温度</label>
+        <input id="fTemp" type="number" min="0" max="2" step="0.1" />
+      </div>
+    </div>
+
+    <div id="testResult">还没测试过。</div>
+
+    <div class="actions">
+      <button id="closeBtn">返回</button>
+      <button id="testBtn">测试连接</button>
+      <button id="saveBtn">保存</button>
+    </div>
+  </div>
+
+    <!-- 角落蔷薇水印 -->
+    <svg class="crest-rose l" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10.4" fill="none" stroke="rgba(201,162,39,0.75)" stroke-width="1" />
+      <path d="M12,5.4 C16.4,5.4 18.6,8.6 18.6,12 C18.6,15.4 15.6,18.6 12,18.6 C8.4,18.6 5.4,15.4 5.4,12 C5.4,8.6 7.6,5.4 12,5.4"
+            fill="none" stroke="#c8102e" stroke-width="1.2" />
+      <path d="M12,8.8 C14,8.8 15.2,10.3 15.2,12 C15.2,13.8 13.7,15.2 12,15.2 C10.3,15.2 8.8,13.8 8.8,12"
+            fill="none" stroke="#e02a44" stroke-width="1.2" />
+      <circle cx="12" cy="12" r="1.5" fill="#c9a227" />
+    </svg>
+    <svg class="crest-rose r" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10.4" fill="none" stroke="rgba(201,162,39,0.75)" stroke-width="1" />
+      <path d="M12,5.4 C16.4,5.4 18.6,8.6 18.6,12 C18.6,15.4 15.6,18.6 12,18.6 C8.4,18.6 5.4,15.4 5.4,12 C5.4,8.6 7.6,5.4 12,5.4"
+            fill="none" stroke="#c8102e" stroke-width="1.2" />
+      <path d="M12,8.8 C14,8.8 15.2,10.3 15.2,12 C15.2,13.8 13.7,15.2 12,15.2 C10.3,15.2 8.8,13.8 8.8,12"
+            fill="none" stroke="#e02a44" stroke-width="1.2" />
+      <circle cx="12" cy="12" r="1.5" fill="#c9a227" />
+    </svg>
+
+
+  <script src="./chat.js"></script>
+</body>
+</html>

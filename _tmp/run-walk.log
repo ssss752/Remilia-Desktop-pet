@@ -1,0 +1,93 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=walk say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v7
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v7\ai-config.json
+[top] after create setAOT(true) -> true
+[remind] started hourly=true water=50min quiet=23-8
+[gate] G1 PASS frames={"idle":4,"walk":8,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "你来啦，今天也要陪我哦" side=right at 1505,786 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "地板好凉……" side=right at 1505,786 top=true
+[bubble] warm-up done top=true
+[gate] force state walk
+[bubble] "跟着主人后面走，不会走丢" side=right at 1506,792 top=true
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=124x120 want=124x120
+[perf] 4.0s raf=924 draw=107 state=walk frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[perf] 4.0s raf=959 draw=110 state=walk frozen=false lowFlash=true
+[input] pointerdown btn=0 at 35,66
+[input] mousedown 1126,858 state=walk
+[input] mouseup moved=false
+[bubble] "再来一爪～喵" side=right at 1174,792 top=true
+[input] pointerdown btn=0 at 65,65
+[input] mousedown 1112,856 state=paw
+[input] mouseup moved=true
+[bubble] "呀——！放我下来啦" side=right at 1164,675 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "我没事～就是有点晕" side=right at 1164,791 top=true
+[input] pointerdown btn=0 at 64,61
+[input] mousedown 1102,853 state=drop
+[input] mouseup moved=true
+[bubble] "主人轻点轻点～头晕了" side=right at 1120,0 top=true
+[land] fall -> crouch, hold 3400ms
+[bubble] "呜，缩成一团了" side=right at 1114,759 top=true
+[perf] 4.0s raf=961 draw=110 state=fall frozen=false lowFlash=true
+[input] pointerdown btn=2 at 72,53
+[input] mousedown 1059,850 state=fall
+[input] mouseup moved=false
+[input] contextmenu at 1059,850
+[input] pet menu at 917,638
+[input] menu shown visible=true focused=true
+[bubble] "翅膀扇扇，就能飘起来啦" side=right at 1114,797 top=true
+[input] menu topmost ok=true tries=0
+[input] pointerdown btn=2 at 65,70
+[input] mousedown 988,709 state=float
+[input] mouseup moved=false
+[input] contextmenu at 988,709
+[input] pet menu at 846,497
+[input] menu shown visible=true focused=true
+[bubble] "哈哈哈，好好玩" side=right at 1042,644 top=true
+[input] menu topmost ok=true tries=0
+[land] fall -> crouch, hold 3400ms
+[bubble] "从那么高摔下来……" side=right at 1040,778 top=true
+[perf] 4.0s raf=957 draw=111 state=fall frozen=false lowFlash=true
+[bubble] "Zzz…" side=right at 1040,795 top=true
+[perf] 4.4s raf=85 draw=18 state=sleep frozen=false lowFlash=true
+[input] pointerdown btn=0 at 81,73
+[input] mousedown 994,864 state=sleep
+[bubble] "呀——！放我下来啦" side=right at 1040,791 top=true
+[input] mouseup moved=true
+[land] fall -> crouch, hold 3400ms
+[bubble] "起不来啦，抱我起来" side=right at 1096,772 top=true
+[input] pointerdown btn=0 at 71,90
+[input] mousedown 1040,884 state=fall
+[input] mouseup moved=true
+[bubble] "主人轻点轻点～头晕了" side=right at 1104,272 top=true
+[perf] 4.0s raf=294 draw=40 state=drag frozen=false lowFlash=true
+[land] fall -> crouch, hold 3400ms
+[bubble] "主人扶我一下嘛" side=right at 1100,779 top=true
+[perf] 4.0s raf=960 draw=111 state=fall frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1100,792 top=true
+[bubble] "唔……好想被摸摸头呀" side=right at 1100,792 top=true
+[fly] toTop -> hoverY=10 (petH=120)
+[perf] 4.0s raf=960 draw=69 state=flyTop frozen=false lowFlash=true
+[input] pointerdown btn=2 at 57,75
+[input] mousedown 1131,452 state=flyTop
+[input] mouseup moved=false
+[input] contextmenu at 1131,452
+[input] pet menu at 989,240
+[input] menu shown visible=true focused=true
+[bubble] "最喜欢主人了～" side=right at 1208,331 top=true
+[input] menu topmost ok=true tries=0
+[land] fall -> crouch, hold 3400ms
+[bubble] "屁股和头都在疼" side=right at 1208,773 top=true
+[perf] 4.0s raf=961 draw=111 state=fall frozen=false lowFlash=true
+[perf] alwaysOnTop healed ok=false
+[perf] alwaysOnTop healed ok=true
+[land] crouch hold done -> rise back to idle
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1208,791 top=true
+[perf] 4.0s raf=926 draw=95 state=idle frozen=false lowFlash=true
+[bubble] "喵喵，给我小鱼干～" side=right at 1208,791 top=true
+[perf] 4.0s raf=961 draw=64 state=neko frozen=false lowFlash=true

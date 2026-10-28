@@ -1,0 +1,17 @@
+{
+  "name": "remilia-pet",
+  "productName": "蕾米莉亚桌宠",
+  "version": "1.0.0",
+  "description": "蕾米莉亚桌面宠物：漂浮、攀爬、撒娇、拖拽物理与 AI 对话",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "env -u ELECTRON_RUN_AS_NODE electron .",
+    "pack": "electron-builder --dir",
+    "dist:mac": "electron-builder --mac --arm64 --x64",
+    "dist:win": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0",
+    "electron-builder": "^26.0.0"
+  }
+}

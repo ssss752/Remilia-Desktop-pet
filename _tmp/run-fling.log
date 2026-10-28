@@ -1,0 +1,42 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=__fling say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v15
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v15\ai-config.json
+[top] after create setAOT(true) -> true
+[remind] started hourly=true water=50min quiet=23-8
+[gate] G1 PASS frames={"idle":4,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"fly":"alias:float","drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "欢迎回来～想我了没有？" side=right at 1505,786 top=true
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=true
+[bubble] warm-up done top=true
+[gate] force state __fling
+[bubble] "呀——！放我下来啦" side=right at 1506,782 top=true
+[land] fling test: released at y=372 groundY=792
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=125x121 want=124x120
+[land] fall -> crouch, hold 3400ms
+[bubble] "主人扶我一下嘛" side=right at 1506,764 top=true
+[bubble] "点我一下，我会换姿势给你" side=right at 1506,792 top=true
+[perf] 4.0s raf=879 draw=98 state=fall frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1506,792 top=true
+[bubble] "双击让我睡觉，右键有菜单" side=right at 1506,785 top=true
+[input] pointerdown btn=0 at 62,60
+[input] mousedown 1441,840 state=idle
+[bubble] "再不理我我就真的生气了" side=right at 1506,780 top=true
+[bubble] "不要转圈圈呀，好晕" side=right at 1506,780 top=true
+[input] drag start from=pout now=drag
+[perf] 4.0s raf=961 draw=70 state=drag frozen=false lowFlash=true
+[input] mouseup moved=true
+[bubble] "想聊天就点托盘那个小粉点" side=right at 1506,728 top=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "主人下次轻点放我下来嘛" side=right at 1506,785 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1506,792 top=true
+[perf] 4.0s raf=960 draw=93 state=idle frozen=false lowFlash=true
+[bubble] "我在这儿哦，一直在哦" side=right at 1506,779 top=true
+[perf] 4.0s raf=961 draw=47 state=idle frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=46 state=idle frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=47 state=idle frozen=false lowFlash=true
+[bubble] "你是不是又在偷偷看别的女" side=right at 1506,779 top=true
+[perf] 4.1s raf=153 draw=7 state=idle frozen=true lowFlash=true

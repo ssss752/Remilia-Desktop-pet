@@ -1,0 +1,35 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=- say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v12
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v12\ai-config.json
+[top] after create setAOT(true) -> true
+[remind] started hourly=true water=50min quiet=23-8
+[gate] G1 PASS frames={"idle":4,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"fly":"alias:float","drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "欢迎回来～想我了没有？" side=right at 1505,786 top=true
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=true
+[bubble] warm-up done top=true
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=125x121 want=124x120
+[bubble] "点我一下，我会换姿势给你" side=right at 1506,780 top=true
+[perf] 4.0s raf=872 draw=72 state=greet frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[bubble] "双击让我睡觉，右键有菜单" side=right at 1506,780 top=true
+[perf] 4.0s raf=961 draw=78 state=greet frozen=false lowFlash=true
+[bubble] "想聊天就点托盘那个小粉点" side=right at 1506,780 top=true
+[perf] 4.0s raf=960 draw=78 state=greet frozen=false lowFlash=true
+[bubble] "像不像蝙蝠～我是吸血鬼哦" side=right at 1506,780 top=true
+[perf] 4.0s raf=959 draw=85 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=float frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "地板好凉……" side=right at 1482,789 top=true
+[land] crouch hold done -> rise back to idle
+[bubble] "今天的红茶还没喝完呢～" side=right at 1482,791 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1482,791 top=true
+[perf] 4.1s raf=547 draw=62 state=idle frozen=true lowFlash=true
+[bubble] "哼，不理你了" side=right at 1482,783 top=true
+[perf] 4.0s raf=714 draw=58 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=pout frozen=false lowFlash=true
+[peek] hint sent (cursor away 46s)

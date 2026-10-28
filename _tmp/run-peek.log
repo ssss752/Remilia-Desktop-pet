@@ -1,0 +1,89 @@
+
+[gate] app starting 1.0.0
+[gate] test-env force=peek say=- shot=- bubbleShot=- menuShot=-
+[gate] userData: C:\Users\susan0721\AppData\Roaming\pet-v16
+[gate] ai-config: C:\Users\susan0721\AppData\Roaming\pet-v16\ai-config.json
+[top] after create setAOT(true) -> true
+[remind] started hourly=true water=50min quiet=23-8
+[gate] G1 PASS frames={"idle":4,"drag":4,"crouch":6,"sleep":4,"greet":4,"interact":4,"float":4,"grip":4,"neko":4,"paw":4,"pout":4,"roll":4,"fly":"alias:float","drop":"alias:crouch","flyTop":"alias:float","peek":"alias:grip","fall":"alias:crouch"} renderer=webgl-live2d webgl=true
+[bubble] "主人回来啦！我等好久啦" side=right at 1505,786 top=true
+[bubble] "拖我到处走～松手我会掉下" side=right at 1505,786 top=true
+[bubble] warm-up done top=true
+[gate] force state peek
+[peek] start side=right from x=1379 -> 1623
+[bubble] "偷偷瞄一下……应该不会被" side=right at 1506,782 top=true
+[gate] G3 PASS {"visible":true,"alwaysOnTop":true,"notFocused":true,"inScreen":true,"sizeOk":true} size=125x120 want=124x120
+[peek] hidden at x=1623 side=right visible=84px
+[bubble] "点我一下，我会换姿势给你" side=left at 1423,782 top=true
+[perf] 4.0s raf=884 draw=99 state=peek frozen=false lowFlash=true
+[gate] G4 evidence: E:\WorkBuddy-Output\2026-10-27-12-00-52\remilia-pet\g4-evidence.png
+[bubble] "双击让我睡觉，右键有菜单" side=left at 1427,782 top=true
+[perf] 4.0s raf=961 draw=111 state=peek frozen=false lowFlash=true
+[bubble] "想聊天就点托盘那个小粉点" side=left at 1423,782 top=true
+[perf] 4.0s raf=961 draw=111 state=peek frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=112 state=peek frozen=false lowFlash=true
+[peek] back in at x=1587 -> idle
+[bubble] "唔……好想被摸摸头呀" side=left at 1394,782 top=true
+[bubble] "你是不是又在偷偷看别的女" side=left at 1394,782 top=true
+[perf] 4.1s raf=889 draw=100 state=idle frozen=true lowFlash=true
+[perf] 4.2s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=22 draw=2 state=idle frozen=true lowFlash=true
+[bubble] "陪我玩一会儿嘛，就一小会" side=left at 1389,780 top=true
+[bubble] "像不像蝙蝠～我是吸血鬼哦" side=left at 1389,780 top=true
+[perf] 4.0s raf=384 draw=43 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=112 state=float frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=110 state=float frozen=false lowFlash=true
+[peek] hint sent (cursor away 46s)
+[perf] 4.0s raf=960 draw=111 state=float frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1278,790 top=true
+[perf] 4.0s raf=960 draw=112 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人摸摸我的头，我就乖乖" side=right at 1278,791 top=true
+[bubble] "我在这儿哦，一直在哦" side=right at 1278,791 top=true
+[perf] 4.1s raf=347 draw=38 state=idle frozen=true lowFlash=true
+[peek] start side=right from x=1151 -> 1623
+[bubble] "偷偷瞄一下……应该不会被" side=right at 1278,783 top=true
+[peek] hidden at x=1623 side=right visible=84px
+[perf] 4.0s raf=914 draw=107 state=peek frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=110 state=peek frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=112 state=peek frozen=false lowFlash=true
+[peek] back in at x=1587 -> idle
+[bubble] "主人摸摸我的头，我就乖乖" side=left at 1393,782 top=true
+[bubble] "你是不是又在偷偷看别的女" side=left at 1393,782 top=true
+[perf] 4.0s raf=240 draw=25 state=idle frozen=false lowFlash=true
+[perf] 4.1s raf=22 draw=1 state=idle frozen=true lowFlash=true
+[perf] 4.1s raf=21 draw=1 state=idle frozen=true lowFlash=true
+[bubble] "陪我玩一会儿嘛，就一小会" side=left at 1389,780 top=true
+[bubble] "嘿嘿，摸摸头好舒服" side=left at 1389,780 top=true
+[perf] 4.0s raf=44 draw=4 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=77 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=interact frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=77 state=interact frozen=false lowFlash=true
+[fly] toTop -> hoverY=10 (petH=120)
+[perf] 4.0s raf=961 draw=89 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=111 state=flyTop frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=112 state=flyTop frozen=false lowFlash=true
+[land] drop -> crouch, hold 2200ms
+[bubble] "刚才那下摔得有点狠" side=right at 1064,789 top=true
+[perf] 4.0s raf=961 draw=111 state=drop frozen=false lowFlash=true
+[land] crouch hold done -> rise back to idle
+[bubble] "主人～你在看我吗？" side=right at 1064,791 top=true
+[bubble] "好无聊呀，我们来玩点什么" side=right at 1064,791 top=true
+[perf] 4.1s raf=465 draw=52 state=idle frozen=true lowFlash=true
+[bubble] "呜，哄我一下会怎样" side=right at 1064,783 top=true
+[perf] 4.0s raf=816 draw=67 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=pout frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=78 state=pout frozen=false lowFlash=true
+[bubble] "再来一爪～喵" side=right at 1064,779 top=true
+[perf] 4.0s raf=961 draw=77 state=paw frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=78 state=paw frozen=false lowFlash=true
+[perf] 4.0s raf=960 draw=77 state=paw frozen=false lowFlash=true
+[perf] 4.0s raf=959 draw=77 state=paw frozen=false lowFlash=true
+[bubble] "打滚打滚～看我表演" side=right at 1064,779 top=true
+[perf] 4.0s raf=961 draw=78 state=roll frozen=false lowFlash=true
+[perf] 4.0s raf=961 draw=77 state=roll frozen=false lowFlash=true
